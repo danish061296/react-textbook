@@ -1,25 +1,35 @@
-.about{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-items: center;
-
-    height: 70vh;
-    background: violet;
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  height: 75vh;
+  background: black;
 }
 
-.search_input{
-    width: 40%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
+.search_input {
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.about_title{
-    color: white;
-    font-size: 60px;
-
+.about_title {
+  color: white;
+  font-size: 60px;
 }
 
+.about-services {
+  margin-top: 10px;
+  display: flex;
+}
+
+.services-link {
+  /* margin-right: 40px; */
+  margin: 30px;
+  color: white;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}

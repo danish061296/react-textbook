@@ -1,8 +1,6 @@
-.services{
-    background: green;
-    color: white;
-    height: 100vh;
-    font-size: 50px;
-
-
+.services {
+  background: f7f8fa;
+  color: black;
+  height: 100vh;
+  font-size: 50px;
 }

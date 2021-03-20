@@ -2,23 +2,14 @@ import React from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import './Navigation.css';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import logo from '../logo.png';
 
 const Navigation = () => {
   return (
     <>
-      <Navbar bg="dark" variant="dark" className="navbar" sticky="top">
-        <Navbar.Brand href="/home">
-          <img
-            style={{
-              objectFit: 'cover',
-              height: '50px',
-              backgroundColor: 'transparent',
-            }}
-            src={logo}
-          />
-        </Navbar.Brand>
-        {/* <Navbar.Brand href="#home">iShareBooks</Navbar.Brand> */}
+      <Navbar bg="" variant="dark" className="navbar-first" sticky="top">
         <Nav className="ml-auto ">
           <Link
             className="nav_link"
@@ -76,10 +67,30 @@ const Navigation = () => {
           </Link>
         </Nav>
 
-        <Button variant="success" href="/registration">
+        <Button variant="outline-success signup-btn" href="/registration">
           Sign Up
         </Button>
       </Navbar>
+
+      <div className="navbar-second">
+        <h1 className="navbar-logo">
+          <a href="/home">iShareBooks</a>
+        </h1>
+        <div className="navbar-icons">
+          <ShoppingCartIcon />
+          <FavoriteIcon />
+        </div>
+      </div>
+
+      {/* <Navbar bg="" variant="dark" className="navbar-second">
+        <Navbar.Brand href="/home" className="navbar-logo">
+          iShareBooks
+        </Navbar.Brand>
+        <div className="navbar-icons">
+          <ShoppingCartIcon />
+          <FavoriteIcon />
+        </div>
+      </Navbar> */}
     </>
   );
 };
