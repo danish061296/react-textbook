@@ -1,10 +1,10 @@
-.navbar-first {
+.navbar__first {
   height: 50px;
   font-size: 15px;
   background: #28918a !important;
 }
 
-.navbar-second {
+.navbar__second {
   display: flex !important;
   justify-content: center !important;
   align-items: center;
@@ -14,31 +14,48 @@
   background: #f7f8fa !important;
 }
 
-.navbar-logo {
+.navbar__logo {
   color: black !important;
   font-size: 40px !important;
   font-weight: 700 !important;
   margin-left: 30px;
   flex: 0.8;
+  text-decoration: none !important;
 }
 
-.navbar-icons {
+.navbar__logo {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar__icons {
+  margin-top: 8px;
   justify-self: flex-end;
   display: flex;
-  justify-content: space-between;
+  cursor: pointer;
 }
 
-.nav_link:hover {
+.nav__link:hover {
   color: white !important;
   border-bottom: 1px solid white;
 }
 
-.signup-btn {
+.signup__btn {
   color: white !important;
   border: 1px solid white !important;
 }
 
-.signup-btn:hover {
+.signup__btn:hover {
   color: #28918a !important;
   background: white !important;
+}
+
+.navbar__logoLink {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.cart {
+  font-size: 25px;
 }

@@ -9,10 +9,10 @@ import logo from '../logo.png';
 const Navigation = () => {
   return (
     <>
-      <Navbar bg="" variant="dark" className="navbar-first" sticky="top">
+      <Navbar bg="" variant="dark" className="navbar__first" sticky="top">
         <Nav className="ml-auto ">
           <Link
-            className="nav_link"
+            className="nav__link"
             style={{
               color: '#D3D3D3',
               textDecoration: 'none',
@@ -26,7 +26,7 @@ const Navigation = () => {
             About
           </Link>
           <Link
-            className="nav_link"
+            className="nav__link"
             style={{
               color: '#D3D3D3',
               textDecoration: 'none',
@@ -40,7 +40,7 @@ const Navigation = () => {
             Services
           </Link>
           <Link
-            className="nav_link"
+            className="nav__link"
             style={{
               color: '#D3D3D3',
               textDecoration: 'none',
@@ -54,7 +54,7 @@ const Navigation = () => {
             FAQ
           </Link>
           <Link
-            className="nav_link"
+            className="nav__link"
             style={{
               color: '#D3D3D3',
               textDecoration: 'none',
@@ -67,30 +67,24 @@ const Navigation = () => {
           </Link>
         </Nav>
 
-        <Button variant="outline-success signup-btn" href="/registration">
+        <Button variant="outline-success signup__btn" href="/registration">
           Sign Up
         </Button>
       </Navbar>
 
-      <div className="navbar-second">
-        <h1 className="navbar-logo">
-          <a href="/home">iShareBooks</a>
+      <div className="navbar__second">
+        <h1 className="navbar__logo" href="/home">
+          iShareBooks
+          {/* <Link className="navbar__logoLink" to="#home">
+            iShareBooks
+          </Link> */}
+          {/* <a href="/">iShareBooks</a> */}
         </h1>
-        <div className="navbar-icons">
-          <ShoppingCartIcon />
-          <FavoriteIcon />
+        <div className="navbar__icons">
+          <ShoppingCartIcon className="cart" />
+          <p>0</p>
         </div>
       </div>
-
-      {/* <Navbar bg="" variant="dark" className="navbar-second">
-        <Navbar.Brand href="/home" className="navbar-logo">
-          iShareBooks
-        </Navbar.Brand>
-        <div className="navbar-icons">
-          <ShoppingCartIcon />
-          <FavoriteIcon />
-        </div>
-      </Navbar> */}
     </>
   );
 };
